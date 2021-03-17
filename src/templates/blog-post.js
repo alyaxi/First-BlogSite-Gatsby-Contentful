@@ -31,7 +31,11 @@ const BlogPost = props => {
     return (
         <Layout>
                <SEO title={props.data.contentfulBlogSpot.title} />
-               <Link to="/blog/">Visit to Blog Page</Link>    
+               <p>
+               <Link to="/blog/" style={{ color: "#810000"}}>Visit to Blog Page</Link> 
+               </p>
+               <br/>  
+               <hr/> 
                <div className="content">
                    <h1>{props.data.contentfulBlogSpot.title}</h1>
                    <span className="meta">
@@ -46,6 +50,7 @@ const BlogPost = props => {
                      )}
                      {renderRichText(props.data.contentfulBlogSpot.body)}              
                </div>
+               <hr/>
         </Layout>
     )
 }

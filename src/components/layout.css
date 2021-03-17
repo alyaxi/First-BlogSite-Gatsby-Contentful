@@ -604,14 +604,14 @@ pre tt:after {
 }
 .post h2,
 .content h1 {
-  text-align: center;
+  /* text-align: center; */
 }
 .post h2 a {
-  color: #555;
+  color: #810000;
 }
 .meta {
   font-size: 13px;
-  text-align: center;
+  /* text-align: center; */
   font-weight: 300;
   margin-bottom: 20px;
   display: block;
@@ -624,7 +624,6 @@ pre tt:after {
 .button {
   font-size: 14px;
   font-weight: 300;
-  text-align: center;
   padding: 20px 0;
 }
 .button a {
@@ -636,5 +635,5 @@ pre tt:after {
 .button a:hover {
   color: #fff;
   border-color: #222;
-  background-color: #222;
+  background-color: #810000;
 }

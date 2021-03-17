@@ -18,7 +18,7 @@ const Blog = () => {
             id
             publishedDate(formatString: "Do MMMM, YYYY")
             featuredImage {
-              fluid(maxWidth: 750) {
+              fluid(maxWidth: 450) {
                 ...GatsbyContentfulFluid
               }
             }
@@ -39,8 +39,10 @@ const Blog = () => {
     <Layout>
       <SEO title="Blog"/>
       <p>
-        <Link to="/">Go to HomePage</Link>
+        <Link style={{ color: "#810000"}}to="/"> ☚ Go to Home Page</Link>
       </p>
+      <br/>
+      <hr/> 
       <ul className="posts">
         {data.allContentfulBlogSpot.edges.map(edge => {
           return (
